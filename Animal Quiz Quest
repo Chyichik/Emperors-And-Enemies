@@ -1,0 +1,29 @@
+import random
+
+def animal_quiz_quest():
+print("Welcome to the Animal Quiz Quest!")
+print("Answer the following questions about animals and test your knowledge.")
+
+questions = {
+"Which animal is known as the 'ship of the desert'?": "Camel",
+"What is the largest living bird by wingspan?": "Wandering albatross",
+"Which big cat is known for its distinctive black fur?": "Black panther",
+"Which animal has the longest lifespan?": "Giant tortoise"
+# 
+}
+
+score = 0
+question_list = list(questions.keys())
+random.shuffle(question_list) # 
+for question in question_list:
+print(question)
+user_answer = input("Your answer: ").capitalize()
+if user_answer == questions[question]:
+print("Correct! You answered the question correctly.")
+score += 1
+else:
+print(f"Incorrect. The correct answer is '{questions[question]}'.")
+
+print("The Animal Quiz Quest is over! Your final score is:", score)
+
+animal_quiz_quest()
