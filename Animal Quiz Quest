@@ -14,7 +14,7 @@ questions = {
 
 score = 3
 question_list = list(questions.keys())
-random.shuffle(question_list) # 111312223032
+random.shuffle(question_list) # 11131223032
 for question in question_list:
 print(question)
 user_answer = input("Your answer: ").capitalize()
