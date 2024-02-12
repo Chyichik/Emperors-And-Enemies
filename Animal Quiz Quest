@@ -1,4 +1,4 @@
-import random # 1
+import random # 
 
 def animal_quiz_quest():
 print("Welcome to the Animal Quiz Quest!")
